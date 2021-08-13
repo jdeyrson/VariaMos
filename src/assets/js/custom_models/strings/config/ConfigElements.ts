@@ -28,6 +28,11 @@ export class ConfigElements extends CE {
       let element = new DynamicElement(currentModel);
       element.getProperties()[0].defValue = label;
       element.getProperties()[2].defValue = label;
+      element.getProperties()[3].defValue = childs[i].getAttribute('props');
+      element.setLabel(label);
+      if(childs[i].getAttribute('container') == "false"){
+        element.setStyle('startSize=15;');
+      }
       this.addVertex(element);
     }
   }

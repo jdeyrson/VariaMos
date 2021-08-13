@@ -82,4 +82,12 @@ export abstract class ModelElement {
   public setProperties(properties:any) {
     this.properties = properties;
   }
+
+  public setStyle(style:any) {
+    this.style = style;
+  }
+
+  public setLabel(label:any) {
+    this.label = label;
+  }
 }

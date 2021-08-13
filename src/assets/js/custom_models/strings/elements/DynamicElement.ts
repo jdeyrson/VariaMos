@@ -34,6 +34,16 @@ export class DynamicElement extends ModelElement {
     );
     properties.push(
       {
+        id: 'props',
+        label: 'Props',
+        defValue: '',
+        inputType: 'textarea',
+        disabled: 'false',
+        display: 'true',
+      },
+    );
+    properties.push(
+      {
         id: 'selected',
         label: 'Selected',
         defValue: 'false',
